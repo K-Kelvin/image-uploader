@@ -1,0 +1,102 @@
+.Upload-image,
+.Uploading-image,
+.Upload-success {
+    background: var(--white);
+    border-radius: var(--radius);
+    color: var(--gray2);
+    font-family: "Poppins", sans-serif;
+    padding: 36px 32px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+/* Upload image */
+.Upload-image > .title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.375rem; /* 22px */
+    color: var(--gray2);
+}
+.Upload-image > .description {
+    margin-bottom: 2.25rem; /* 36px */
+    color: var(--gray3);
+    font-size: 0.875rem; /* 14px */
+}
+.Upload-image > .drag-n-drop {
+    padding: 2.25rem; /* 36px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem; /* 36px */
+    color: var(--gray4);
+    border: 1px dashed var(--drag-drop-border-color);
+    background: var(--dragndrop-bg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+    min-width: 338px;
+    font-size: 1rem; /* 16px */
+}
+.drag-n-drop .image,
+.drag-n-drop .text {
+    pointer-events: none;
+}
+.drag-n-drop.highlight {
+    border-color: var(--blue1);
+    border-style: solid;
+}
+.drag-n-drop.image-shown {
+    border: 1px solid var(--border-color);
+}
+.drag-n-drop.image-shown > * {
+    visibility: hidden;
+}
+.Upload-image > .or {
+    color: var(--gray4);
+    margin: 12px 0;
+}
+.file-container input {
+    display: none;
+}
+.file-container .choose-file {
+    display: inline-block;
+    background: var(--blue1);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.875rem; /* 14px */
+    border: none;
+    cursor: pointer;
+}
+
+.Uploading-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem; /* 30px */
+}
+.Uploading-image > .label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem; /* 18px */
+    color: var(--gray2);
+}
+.Uploading-image > .progress {
+    --progress-height: 8px;
+    --progress-radius: 8px;
+    width: 340px;
+    height: var(--progress-height);
+    border: none;
+    border-radius: var(--progress-radius);
+    overflow: hidden;
+    background: var(--gray6);
+}
+.progress > .inner {
+    --seconds: attr(data-duration ms);
+    width: 100px;
+    height: var(--progress-height);
+    border-radius: var(--progress-radius);
+    background: var(--blue1);
+    transition: all var(--seconds) ease;
+}
