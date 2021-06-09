@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://image-uploader-kelvin.netlify.app">
       Solution
     </a>
     <span> | </span>
@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](./src/images/github_jobs.png)
+![screenshot](./src/images/image-uploader.png)
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
